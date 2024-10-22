@@ -1,0 +1,296 @@
+/*
+    Theme Responsive Design
+*/
+
+@media (max-width: 1024px) {
+    .list-items .blog-post .blog-content{
+        padding: 0;
+    }
+    .single-post h2{
+        font-size: 20px;
+    }
+    .comments-list .comment-box{
+        width: 620px;
+    }
+    .reply-list .comment-box{
+        width: 540px;
+    }
+    .top-header,
+    .bottom-header{
+        display: none;
+    }
+    .slider-text h1{
+        font-size: 24px;
+        line-height: 18px;
+    }
+    .cta-section-2 .cta-content h2{
+        font-size: 20px;
+    }
+    .project-filter li{
+        margin-right: 0;
+        padding: 10px;
+    }
+    .section-heading span{
+        font-size: 10px;
+    }
+    .section-heading h2{
+        font-size: 24px;
+    }
+    .counter-section{
+        padding: 100px 0;
+    }
+    .widget-content img{
+        width: 100%;
+    }
+    .bg-shape,
+    .bg-shape-2{
+        display: none;
+    }
+}
+
+/* ---- Start of max-width 992px CSS ---- */
+@media (max-width: 992px) {
+    .sm-padding{
+        padding: 15px;
+    }
+    ul.nav > li > a {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+    .blog-content p{
+        font-size: 12px;
+    }
+    .blog-items{
+        padding: 0 10px;
+        border: none;
+    }
+    .list-items .blog-post .col-md-6:first-child{
+        padding-left: 15px;
+    }
+    .cta-section-2:after,
+    .cta-section-2:before{
+        display: none;
+    }
+    .cta-section-2 .cta-content h2{
+        font-size: 16px;
+    }
+    .cta-section-2 .default-btn{
+        background-color: #222;
+        color: #fff;
+        border: 2px solid #222;
+    }
+    .cta-section-2 .default-btn:hover{
+        background-color: transparent;
+    }
+    .about-content h2{
+        font-size: 18px;
+    }
+    .about-wrap img{
+        margin-bottom: -60px;
+    }
+    .project-filter li{
+        font-size: 10px;
+    }
+    .cta-content h2{
+        font-size: 24px;
+    }
+    .cta-section{
+        padding: 100px 0;
+    }
+    .blog-post .blog-content a{
+        font-size: 15px;
+    }
+    .header-section{
+        top: 0;
+    }
+    .slider-text .default-btn{
+        font-size: 10px;
+        line-height: 35px;
+    }
+
+}
+/* ---- End of max-width 992px CSS ---- */
+
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+@media all and (min-width: 480px) and (max-width: 768px) {
+	
+}
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 767px CSS ---- */
+@media all and (max-width: 767px) {
+    body, p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    p br{
+        display: none;
+    }
+    .padding{
+        padding: 60px 0;
+    }
+    .xs-padding{
+    	padding: 15px;
+    }
+    .header-section .container{
+        max-width: 100%;
+        width: 100%;
+    }
+    .page-content{ padding-top: 0; }
+    .navbar-header {
+        padding: 23px 20px;
+    }
+    .navbar-header .brand {
+        display: block;
+        padding: 13px 25px;
+    }
+    .js #mainmenu {
+        display:none;
+    }
+    .js .slicknav_menu {
+        display:block;
+    }
+    .breadcrumb {
+        right: auto;
+        top: auto;
+        bottom: -50px;
+        left: -15px;
+        margin: 0;
+    }
+	.contact_form .form-group .col-sm-6:first-child{
+        margin-bottom: 15px;
+    }
+    .coment-form .form-group .col-sm-4:last-child{
+        margin-top: 15px;
+    }
+    .list-items .blog-post img{
+        margin-bottom: 10px;
+    }
+    .colum-row .col-sm-6:first-child{
+        margin-bottom: 15px;
+    }
+    .contact-info ul li{
+        font-size: 10px;
+    }
+    .single-post h2{
+        font-size: 16px;
+    }
+    .share-icon li{
+        margin-bottom: 10px;
+    }
+    .comments-list .comment-box{
+        width: 100%;
+    }
+    .slider-text p,
+    .slider-text .default-btn{
+        display: none!important;
+    }
+    .slider-text h1{
+        font-size: 16px;
+        line-height: 8px;
+    }
+    .nivo-controlNav{
+        bottom: 5px;
+    }
+    .navbar-fixed-top.header-section,
+    .header-section{
+        position: inherit;
+    }
+    .cta-section-2 .cta-content h2{
+        font-size: 14px;
+    }
+    .cta-section-2 .default-btn{
+        padding: 0 10px;
+        line-height: 35px;
+        font-size: 10px;
+    }
+    .cta-section-2{
+        padding: 20px 0;
+    }
+    .about-wrap img{
+        display: none;
+    }
+    .about-content h2{
+        font-size: 14px;
+    }
+    .section-heading h2{
+        font-size: 18px;
+    }
+    .service-wrap .col-4{
+        padding: 5px;
+    }
+    .service-content h4{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+    .service-content p{
+        line-height: 15px;
+    }
+    .service-content a{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+    .counter-section{
+        padding: 50px 0;
+    }
+    .project-filter{
+        text-align: left!important;
+        margin-top: 10px;
+    }
+    .project-filter li{
+        font-size: 9px;
+    }
+    .widget-content img{
+        max-width: 100%;
+    }
+}
+/* ---- End of max-width 767px CSS ---- */
+
+
+/* ---- Start of max-width 576px CSS ---- */
+@media all and (max-width: 576px) {
+    .coment-form .form-group .col-sm-4{
+        margin-bottom: 15px;
+        margin-top: auto;
+    }
+    .coment-form .form-group .col-sm-4:last-child{
+        margin: 0;
+    }
+    .widget-content img{
+        max-width: 100%;
+    }
+    .contact-wrap{ padding: 60px 15px; margin-top: 0; }
+    #google_map{
+        position: inherit;
+        height: 200px;
+        margin-top: -60px;
+    }
+}
+/* ---- End of max-width 576px CSS ---- */
+
+
+/* ---- Start of max-width 420px CSS ---- */
+@media all and (max-width: 420px) {
+    
+}
+/* ---- End of max-width 420px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+@media all and (max-width: 380px) {
+	.slider_content .btn_group a {
+        margin: 0 10px 10px 0;
+    }
+}
+/* ---- End of max-width 380px CSS ---- */
