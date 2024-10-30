@@ -323,7 +323,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
    ========================================================================== */
 .header-section{
     width: 100%;
-    height: 70px;
+    height: 101px;
     z-index: 99;
     position: absolute;
     left: 0;
@@ -332,45 +332,40 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 .navbar-fixed-top.header-section{
     position: fixed;
     top: 0;
-    background: rgb(37,60,80);
-background: linear-gradient(180deg, rgba(37,60,80,1) 0%, rgba(57,94,125,1) 50%, rgba(37,60,80,1) 100%);
-    
+    background:#fff;
+    box-shadow: 0 1px 6px #ccc;
 }
 .navbar-fixed-top.header-section .top-header,
 .navbar-fixed-top.header-section .bottom-header{
     display: none;
 }
+.nav-cont {
+    padding: 2px 5px;
+    background-color: var(--sec-color);
+    position: relative;
+    height: 30px;
+}
+.nav-social-icon {
+    position: absolute;
+    padding: 8px;
+    background: var(--main-color);
+    width: 25%;
+    top: 0;
+    right: -10px;
+    height: 50px;
+    z-index: 9999;
+    transform: skew(20deg);
+}
+.nav-social-icon ul {
+    display: flex;
+    transform: skew(-20deg);
+}
 .menu-wrap{
-    background: rgb(37,60,80);
-background: linear-gradient(180deg, rgba(37,60,80,1) 0%, rgba(57,94,125,1) 50%, rgba(37,60,80,1) 100%);
+    background: #fff;
     display: flex;
     align-items: center;
     padding: 15px 0;
     position: relative;
-}
-.menu-wrap::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -5px;
-    display: block;
-    width: 10px;
-    height: 100%;
-    background: rgb(33,49,63);
-background: linear-gradient(180deg, rgba(33,49,63,1) 0%, rgba(27,37,46,1) 50%, rgba(33,49,63,1) 100%);
-    border-radius: 50%;
-}
-.menu-wrap::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -5px;
-    display: block;
-    width: 10px;
-    height: 100%;
-    background: rgb(33,49,63);
-background: linear-gradient(180deg, rgba(33,49,63,1) 0%, rgba(27,37,46,1) 50%, rgba(33,49,63,1) 100%);
-    border-radius: 50%;
 }
 .nav-menu{
     text-align: right;
@@ -381,12 +376,98 @@ background: linear-gradient(180deg, rgba(33,49,63,1) 0%, rgba(27,37,46,1) 50%, r
     margin-right: 20px;
     text-align: left;
 }
-.nav-menu li a{
+.nav-menu li:not(:last-child):before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%;
+    display: block;
+    background-color: var(--sec-color);
+}
+.nav-mail {
+    margin-right: 15px;
+}
+.nav-mail a{
+    display: flex;
+    align-items: center;
     color: #fff;
+}
+.nav-mail i {
+    color: var(--sec-color);
+    margin-right: 8px;
+}
+.nav-phone a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.nav-phone i {
+    color: var(--sec-color);
+    margin-right: 8px;
+}
+.nav-menu li a{
+    color: #333;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
+}
+.nav-social-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-social-icon li a{
+    margin: 0 10px;
+    color: #Fff
+}
+.site-cont {
+    display: flex;
+}
+.site-cont p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #777;
+}
+.site-cont i {
+    color: var(--sec-color);
+    font-size: 25px;
+    margin-right: 10px;
+}
+.nv-icn-ml, .nv-icn-phn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mail-nav, .phone-nav {
+    display: flex;
+}
+.nav-middle-sec {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mail-nav {
+    margin-right: 20px;
+}
+.nav-menu-cont {
+    text-align: right;
+    position: absolute;
+    bottom: -40px;
+    left: -147px;
+    background: var(--main-color);
+    padding: 10px 60px;
+    color: #fff;
+    transform: skew(-20deg);
+}
+.nav-menu {
+    transform: skew(20deg);
+}
+.nav-menu li a {
+    color: #fff;
 }
 /*Top Header*/
 .top-header{}
@@ -613,6 +694,9 @@ background: linear-gradient(180deg, rgba(33,49,63,1) 0%, rgba(27,37,46,1) 50%, r
     width: 100%;
     text-align: center;
 }
+.slider-section {
+    padding-top: 100px;
+}
 .slider-text h1{
     font-size: 42px;
     font-weight: 900;
@@ -785,7 +869,7 @@ background: linear-gradient(180deg, rgba(33,49,63,1) 0%, rgba(27,37,46,1) 50%, r
     display: flex;
     align-items: center;
     padding: 20px 30px;
-    border: 1px dashed #ddd;
+    border: 1px solid #ddd;
     overflow: hidden;
 }
 .about-wrap img{
@@ -876,7 +960,7 @@ background: linear-gradient(180deg, rgba(33,49,63,1) 0%, rgba(27,37,46,1) 50%, r
 }
 .counters{}
 .counter-content{
-    border: 1px dashed #fff;
+    border: 1px solid #fff;
     padding: 30px;
 }
 .counters .counter-content{
@@ -917,7 +1001,7 @@ background: linear-gradient(180deg, rgba(33,49,63,1) 0%, rgba(27,37,46,1) 50%, r
     font-family: "Roboto", sans-serif;
     font-weight: 800;
     background-color: #f7f7f7;
-    border: 1px dashed #ddd;
+    border: 1px solid #ddd;
     padding: 10px 15px;
     border-radius: 2px;
     cursor: pointer;
@@ -1056,7 +1140,7 @@ background: linear-gradient(180deg, rgba(33,49,63,1) 0%, rgba(27,37,46,1) 50%, r
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
-    padding: 195px 0 90px;
+    padding: 250px 0 90px;
 }
 .page-content{
     text-align: center;
@@ -1720,7 +1804,7 @@ span.date {
    15.0 Widget Section
    ========================================================================== */
 .widget-section{
-    background-color: var(--main-color);
+    background-color: #333;
     background-image: url(../img/map.png);
     background-position: right 150px center;
     background-repeat: no-repeat;
@@ -1803,7 +1887,7 @@ span.date {
    17.0 Scroll To Top
    ========================================================================== */
 #scroll-to-top{
-    background-color: var(--main-color);
+    background-color: var(--sec-color);
     display: none;
     width: 35px;
     height: 35px;
@@ -1817,6 +1901,6 @@ span.date {
     z-index: 999;
 }
 #scroll-to-top:hover{
-    background-color: #ffcb3f;
+    background-color: var(--main-color);
     color: #fff;
 }

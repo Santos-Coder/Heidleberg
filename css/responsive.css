@@ -254,6 +254,12 @@
     .widget-content img{
         max-width: 100%;
     }
+    .site-cont {
+        display: none;
+    }
+    .nav-social-icon {
+        width: 60%;
+    }
 }
 /* ---- End of max-width 767px CSS ---- */
 

@@ -19,11 +19,17 @@
             if (yOffset >= triggerPoint) {
             	header.removeClass("animated fadeIn");
                 header.addClass("navbar-fixed-top cssanimation animated fadeInTop");
-                $('.menu-wrap').css('position', 'static')
+                $('.menu-wrap').css('position', 'static');
+                $('.nav-cont').css('display', 'none');
+                $('.nav-middle-sec').css('padding', '0');
+                $('.nav-menu-cont').css('bottom', '-50px');
             } else {
                 header.removeClass("navbar-fixed-top cssanimation animated fadeInTop");
                 header.addClass("animated fadeIn");
                 $('.menu-wrap').css('position', 'relative')
+                $('.nav-cont').css('display', 'block');
+                $('.nav-middle-sec').css('padding', '25px 0');
+                $('.nav-menu-cont').css('bottom', '-40px');
             }
 
         });
